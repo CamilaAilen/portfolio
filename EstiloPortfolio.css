@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  html {
+    font-size: 100%;
+  }
+
+  .topspace {
+    margin-top: 40px;
+  }
+  
+  .cuerpo{
+      background-color: rgb(237, 216, 216);
+  }
+
+  #header {
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    width: 100%;
+    height: 400px;
+  }
+ 
+  /*
+  #header img.img_banner{
+    margin-top: 500px;  
+  }*/
+  
+  #contenedor {
+    position: absolute; 
+    width: 100%;
+    text-align:right;
+    top: 5px; 
+  }
+  
+  #logo_arg_prog{ 
+    position: absolute; 
+    top: 5px; 
+    left: 0; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 60px ;
+  }
+  
+  #foto_perfil {
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    width: 150px;
+    height: 150px; 
+  }
+  
+  #nombre_pie{
+    font-size: 25px;
+    padding-top: 90px;
+    padding-left: 90px;
+  }
+  
+  #sobre_mi{
+    font-family: Alice, Georgia, serif;
+    font-size: 16px;
+    margin-left:300px;
+  
+  }
+  /*#header #sobre_mi.title {
+    font-family: Alice, Georgia, serif;
+    font-size: 49px;
+    font-size: 3.0625rem;
+    height: 500px;
+  }*/
+  
+  #estilo-logo{
+    position: left;
+    top: 400px;
+    left: 110px;
+    width: 95px;
+    height: 95px;
+  }
+  
+  #experiencia{
+    font-family: Alice, Georgia, serif;
+    font-size: 22px; 
+    
+  }
+  
+  #texto{
+    font-family: Alice, Georgia, serif;
+    font-size: 16px;
+    
+  }
+  
+  .porcentaje{
+    display: flex;
+    justify-content: center;
+    /*align-items: center; 
+    min-height: 98vh;
+    /*background: white;*/
+  }
+  .bloque1{
+      display: flex;
+      justify-content: center;
+      
+  }
+  .bloque2{
+      display: flex;
+      justify-content: center;
+  }
+  /*.container{
+    position: relative;
+    width: 960px;
+    display: flex;
+    justify-content: space-around;
+  }*/
+  
+  .container .card{
+    /*position: relative;*/
+    display: flex;
+    /*justify-content:center;*/
+    align-items: center;
+    height: 200px;
+    border-radius: 10px;
+    /*cursor: pointer;*/
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 23px;
+    padding: 30px;
+    
+  }/*
+  .container .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  }*/
+  
+  .container .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50;
+    width: 100%;
+    height:100%;
+    /*background: white;*/
+    pointer-events: none;
+    z-index: 1;
+  }
+  .porcent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px rgb(209, 109, 109);
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+    
+  }
+  
+  .porcent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .porcent .number #nombre{
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+   /* transition: 0.5s;*/
+  }
+  
+  /*.card:hover .porcent .number h2{
+    color: rgb(0,0,0);
+    font-size: 53px;
+  }
+  .porcent .number h2 span{
+    color: rgb(0,0,0);
+  }
+  */
+  .text{
+    position: relative;
+    color: rgb(0,0,0);
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-85deg)!important;
+  }
+  
+  svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #e79595a2;
+    stroke-width: 10;
+    stroke-linecap: round !important;
+    transform: translate(5px, 5px);
+  }
+  
+  /*Claculo para simular el porcent*/
+  svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+  
+  
+  .card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 80)/100);
+    stroke: rgb(255,0,0);
+  }
+  .card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 30)/100);
+    stroke: rgb(255,0,0);
+  }
+  .card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 60)/100);
+    stroke: rgb(255,0,0);
+  }
+  
+  @media only screen and (max-width:600px)
+  {
+    .porcentaje{
+        height: auto;
+        margin-left: 30px;
+        flex-flow: row wrap;
+    }
+  } 
+  
+  @media screen and(max-width: 1068px){
+    .container{
+        max-width: 80rem;
+        min-width: 70rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 868px){
+  
+    .container{
+        max-width: 80rem;
+    }
+  }
+  @media screen and (max-width: 768px){
+  
+    .container{
+        padding: 2.5rem;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+  
+  .btn-action {
+    font-size: 12px;
+    font-weight: bold;
+    background: transparent!important;
+    border: 1px solid #333;
+    text-shadow: none;
+  }
+  .btn-action:hover,
+  .btn-action:focus,
+  .btn-action:active,
+  .btn-action.active {
+    color: #bd1550;
+    border-color: #bd1550;
+  }
+  .btn-lg {
+    padding: 15px 60px;
+    font-size: 12px;
+    line-height: 1.33;
+    font-weight: bold;
+  }
+  
+  /*.thumbnail:hover img {
+    -webkit-filter: saturate(0%);
+  }*/
+  .thumbnail:hover .cover {
+    opacity: 1;
+  }
+  
+  /***********  Experiencia laboral ***********/
+  .experiencia{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0 25px;
+    text-align: left;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+    padding-top: 50px;
+    padding-left: -34x;
+  }
+  
+  /***************  FOOTER ****************/
+  #footer {
+    background: #232323;
+    padding: 30px 0 0 0;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* Max page width
+  /////////////////////////////////////////////////////////////////////
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1080px;
+    }
+  }*/
+  
