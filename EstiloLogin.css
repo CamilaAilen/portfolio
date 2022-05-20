@@ -2,15 +2,39 @@
     margin: 0px;
     padding: 0px;
   }
-
   html {
     font-size: 100%;
   }
+  body {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+    color: #666666;
+    padding: 0;
+    background-color: rgb(237, 216, 216);
+  }
+  /*#logo_arg_prog{ 
+    position: absolute; 
+    top: 5px; 
+    left: 0; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 60px ;
+  }*/
 
-  .topspace {
-    margin-top: 40px;
+  h1{ 
+    background-color: rgb(245, 199, 230);
+    font-family: Helvetica;
   }
-  
-  .cuerpo{
-      background-color: rgb(237, 216, 216);
-  }
+  section {
+	font-size: 30;
+	text-align: center;
+	font-family: Arial Black;
+	width: 500px;
+	height:500px;
+	margin: 0px 400px; 
+}
+#send{
+    background-color: rgb(245, 199, 230);
+}
