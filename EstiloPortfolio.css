@@ -4,7 +4,8 @@
   }
 
   html {
-    font-size: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .topspace {
@@ -13,9 +14,10 @@
   
   .cuerpo{
       background-color: rgb(237, 216, 216);
+      
   }
-
-  #header {
+ 
+  header {
     background-size: cover;
     background-position: center;
     margin-top: 70px;
@@ -34,7 +36,24 @@
     text-align:right;
     top: 5px; 
   }
-  
+  #boton{
+    background-color: #ad1b86; 
+    border: none;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: rgb(246, 221, 236);
+  }
+  #boton:hover {
+    background-color: #ca6ea5;
+}
+
   #logo_arg_prog{ 
     position: absolute; 
     top: 5px; 
@@ -62,8 +81,8 @@
   #sobre_mi{
     font-family: Alice, Georgia, serif;
     font-size: 16px;
-    margin-left:300px;
-  
+    margin-left:400px;
+    margin-top: 50px;
   }
   /*#header #sobre_mi.title {
     font-family: Alice, Georgia, serif;
@@ -79,10 +98,17 @@
     width: 95px;
     height: 95px;
   }
-  
-  #experiencia{
+  #img-circulo{
+    position: left;
+    top: 400px;
+    left: 110px;
+    width: 95px;
+    height: 95px;
+    margin-left: 50px;
+  }
+  .titulo{
     font-family: Alice, Georgia, serif;
-    font-size: 22px; 
+    font-size: 35px; 
     
   }
   
@@ -126,7 +152,7 @@
     text-align: center;
     transition: 0.5s;
     margin-top: 23px;
-    padding: 30px;
+    padding: 40px;
     
   }/*
   .container .card:hover{
@@ -137,11 +163,11 @@
   .container .card::before{
     content: '';
     position: absolute;
-    top: 0;
+    /*top: 0;
     left: -50;
     width: 100%;
     height:100%;
-    /*background: white;*/
+    background: white;*/
     pointer-events: none;
     z-index: 1;
   }
@@ -152,7 +178,7 @@
     border-radius: 50%;
     box-shadow: inset 0 0 50px rgb(209, 109, 109);
     background: rgb(255, 255, 255);
-    z-index: 1000;
+    /*z-index: 1000;*/
     
   }
   
@@ -182,17 +208,7 @@
     color: rgb(0,0,0);
   }
   */
-  .text{
-    position: relative;
-    color: rgb(0,0,0);
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: 0.5s;
-  }
-  
+  /*grafico de porcentaje*/
   svg{
     position: relative;
     width: 150px;
@@ -210,7 +226,7 @@
     transform: translate(5px, 5px);
   }
   
-  /*Claculo para simular el porcent*/
+  /*Calculo para simular el porcent*/
   svg circle:nth-child(2){
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
@@ -219,17 +235,17 @@
   
   .card:nth-child(1) svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 80)/100);
-    stroke: rgb(255,0,0);
+    stroke: rgb(181, 122, 179);
   }
   .card:nth-child(2) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 30)/100);
-    stroke: rgb(255,0,0);
+    stroke-dashoffset: calc(440 - (440 * 75)/100);
+    stroke: rgb(181, 122, 179);
   }
   .card:nth-child(3) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 60)/100);
-    stroke: rgb(255,0,0);
-  }
-  
+    stroke-dashoffset: calc(440 - (440 * 90)/100);
+    stroke: rgb(181, 122, 179);
+  } 
+/*
   @media only screen and (max-width:600px)
   {
     .porcentaje{
@@ -237,7 +253,7 @@
         margin-left: 30px;
         flex-flow: row wrap;
     }
-  } 
+  } */
   
   @media screen and(max-width: 1068px){
     .container{
@@ -266,30 +282,6 @@
     max-width: 100%;
   }
   
-  .btn-action {
-    font-size: 12px;
-    font-weight: bold;
-    background: transparent!important;
-    border: 1px solid #333;
-    text-shadow: none;
-  }
-  .btn-action:hover,
-  .btn-action:focus,
-  .btn-action:active,
-  .btn-action.active {
-    color: #bd1550;
-    border-color: #bd1550;
-  }
-  .btn-lg {
-    padding: 15px 60px;
-    font-size: 12px;
-    line-height: 1.33;
-    font-weight: bold;
-  }
-  
-  /*.thumbnail:hover img {
-    -webkit-filter: saturate(0%);
-  }*/
   .thumbnail:hover .cover {
     opacity: 1;
   }

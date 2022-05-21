@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+
+div{
+    background: #efdddb; 
+  
+}
+
+app-social{
+    float: right;
+    margin-top: 0px;
+}
