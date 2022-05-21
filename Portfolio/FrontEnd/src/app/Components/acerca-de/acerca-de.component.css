@@ -12,7 +12,7 @@ div{
         height: 20%;
         border-radius: 70%;
         left:9%;
-        top:470px;
+        top:390px;
     }
     /*nombre*/
     #nombre{
@@ -24,11 +24,11 @@ div{
 @media (max-width: 576px){
     #foto_perfil{
         position: absolute;
-        width: 20%;
-        height: 18%;
+        width: 22%;
+        height: 20%;
         border-radius: 70%;
         left: 40%;
-        top:550px;
+        top:490px;
         }
     /*nombre*/
     #nombre{
